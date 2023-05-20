@@ -1,0 +1,38 @@
+<html>
+    <head>
+<link rel="stylesheet" href="bootstrap.min.css">
+<title>ProDucts</title>
+    </head>
+    <body>
+        <div class=" w-75 m-auto p-3 ">
+            <h2 class=" fw-bolder text-center my-3">ProDucts System</h2>
+         <label for="ProductName" class=" py-3"> ProductName: </label>
+         <input type="text" class=" form-control" id="ProductName">
+
+         <label for="ProductPrice" class=" py-3"> ProductPrice: </label>
+         <input type="number" class=" form-control" id="ProductPrice">
+         <label for="ProductCategory" class=" py-3"> ProductCategory: </label>
+         <input type="text" class=" form-control" id="ProductCategory">
+         <label for="ProductDesc" class=" py-3"> ProductDesc: </label>
+         <textarea  id="ProductDesc" class=" form-control" cols="10" rows="5"></textarea>
+         <button onclick=" addProduct();" id="mainbtn" class=" btn btn-info my-3 ">Add Product</button>
+        </div>
+        <div>
+            <table class=" table w-75 m-auto">
+                <thead>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Desction</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="productInfo">
+                   
+                </tbody>
+            </table>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
